@@ -16,8 +16,10 @@
     background-position: center;
 
     display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Push to top */
+    padding-top: 50px; /* Space from top */
 }
 
 .center-panel {
@@ -43,10 +45,38 @@
 .cat {
     width: 330px;
     height: 330px;
-    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 1.5));
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1.5));
 }
 
-h1, p {
-    font-family: 'Times New Roman', Times, serif;
+#title {
+    font-family: "Jacquard 24", serif;
     color: white;
+    font-size: 84px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cat-count {
+    font-family: "Jacquard 24", serif;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 5px;
+}
+
+#cps {
+    font-family: "Jacquard 24", serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 50px;
+}
+
+#cat-count, #cps {
+  display: block; /* Behave like a full-width block */
+  width: 100%; /* Stretch across parent */
+  padding: 8px 0; /* Give it vertical space */
 }
