@@ -33,7 +33,7 @@
 }
 
 .scoreboard {
-    background-color: pink;
+    background-color: black;
     flex: 1; /* Take up remaining space */
 }
 
