@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 2.5fr 1.2fr;
+  height: 100vh; /* Full screen height */
+}
+
+.left-panel {
+    background-image: url("../images/striped-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+}
+
+.center-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.right-panel {
+    background-color: blue;
+}
+
+.scoreboard {
+    background-color: pink;
+    flex: 1; /* Take up remaining space */
+}
+
+.upgrades {
+    background-color: purple;
+    flex: 1; /* Take up remaining space */
+}
+
+.cat {
+    width: 330px;
+    height: 330px;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 1.5));
+}
